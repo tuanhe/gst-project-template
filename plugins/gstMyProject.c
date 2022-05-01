@@ -36,7 +36,7 @@
 
 #include <gst/gst.h>
 #include <gst/base/gstbasesrc.h>
-#include "gstmyproject.h"
+#include "gstMyProject.h"
 
 GST_DEBUG_CATEGORY_STATIC (gst_myproject_debug_category);
 #define GST_CAT_DEFAULT gst_myproject_debug_category
