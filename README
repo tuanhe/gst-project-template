@@ -23,3 +23,5 @@ BASE_CLASS parameter (for example BASE_CLASS=videofilter), in my case use :
 ./gst-element-maker MyProject basesrc
 
 3, Copy the generated source file into the project/plugin and replace the gstMyProject.c/gstMyProject.h 
+
+4, gst-app-maker  MyProject
