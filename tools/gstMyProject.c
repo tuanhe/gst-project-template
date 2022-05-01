@@ -2,9 +2,9 @@
  * gst-app-maker, or by your own source code.  To generate suitable
  * app source using gst-app-maker, run:
  *
- *   gst-app-maker  MyProjct
+ *   gst-app-maker  MyProject
  *
- * Then copy the resulting gstMyProjct.c file over this file.
+ * Then copy the resulting gstMyProject.c file over this file.
  */
 /* The rest of this file is shim code to allow the project to compile */
 #include <stdio.h>

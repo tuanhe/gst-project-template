@@ -2,10 +2,10 @@ exe_args = common_args + []
 
 # sources used to compile this program
 tool_sources = [
-  'gstMyProjct.c',
+  'gstMyProject.c',
 ]
 
-executable('gstMyProjct',
+executable('gstMyProject',
   tool_sources,
   install: true,
   c_args : exe_args,

@@ -46,13 +46,13 @@
 #endif
 
 #include <gst/gst.h>
-#include "gstMyProjct.h"
+#include "gstMyProject.h"
 
 static gboolean
 plugin_init (GstPlugin * plugin)
 {
-  gst_element_register (plugin, "MyProjct", GST_RANK_NONE,
-      GST_TYPE_MYPROJCT);
+  gst_element_register (plugin, "MyProject", GST_RANK_NONE,
+      GST_TYPE_MYPROJECT);
 
   return TRUE;
 }
@@ -60,7 +60,7 @@ plugin_init (GstPlugin * plugin)
 GST_PLUGIN_DEFINE (
     GST_VERSION_MAJOR,
     GST_VERSION_MINOR,
-    MyProjct,
+    MyProject,
     "FIXME Template plugin",
     plugin_init,
     VERSION,

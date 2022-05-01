@@ -2,12 +2,12 @@ lib_args = common_args + []
 
 # sources used to compile this plug-in
 plugin_sources = [
-  'gstMyProjctplugin.c',
-  'gstMyProjct.c',
-  'gstMyProjct.h'
+  'gstMyProjectplugin.c',
+  'gstMyProject.c',
+  'gstMyProject.h'
 ]
 
-shlib = shared_library('gstMyProjct',
+shlib = shared_library('gstMyProject',
   plugin_sources,
   c_args : lib_args,
   include_directories: [configinc],
@@ -18,14 +18,14 @@ shlib = shared_library('gstMyProjct',
 )
 
 # Make this library usable as a Meson subproject.
-gst_MyProjct_dep = declare_dependency(
+gst_MyProject_dep = declare_dependency(
   include_directories: include_directories('.'),
   link_with : shlib)
 
 pkg_mod = import('pkgconfig')
 pkg_mod.generate(
-  name : 'gst-MyProjct',
-  filebase : 'gst-MyProjct',
+  name : 'gst-MyProject',
+  filebase : 'gst-MyProject',
   description : 'Meson sample project.',
   subdirs : 'src',
   libraries : shlib,

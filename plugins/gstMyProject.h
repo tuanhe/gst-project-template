@@ -2,12 +2,12 @@
  * gst-element-maker, or by your own source code.  To generate suitable
  * element header using gst-element-maker, run:
  *
- *   gst-element-maker  MyProjct BASE_CLASS
+ *   gst-element-maker  MyProject BASE_CLASS
  *
  * Where BASE_CLASS is replaced by one of the base class templates,
  * such as basesrc, basetransform, audiofilter, videofilter2, etc.
- * Then copy the resulting gstMyProjct.h file over this file, and
- * gstMyProjct.c over gstMyProjct.c.
+ * Then copy the resulting gstMyProject.h file over this file, and
+ * gstMyProject.c over gstMyProject.c.
  */
 /* The rest of this file is shim code to allow the project to compile */
-#define GST_TYPE_MYPROJCT G_TYPE_NONE
+#define GST_TYPE_MYPROJECT G_TYPE_NONE
