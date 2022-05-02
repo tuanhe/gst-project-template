@@ -9,7 +9,7 @@ ENDIF()
 
 project (gst-template)
 
-set(GST_DIR ${PROJECT_SOURCE_DIR}/../gstreamer)
+set(GST_DIR /home/i/framework/gstreamer)
 message("GST dir : ${GST_DIR}")
 
 set(HEADER_FILE gst.h)
@@ -23,9 +23,11 @@ else()
     message(STATUS "Gst head file located at: ${GST_INCLUDE_DIR}")
     include_directories(${GST_INCLUDE_DIR}/..)
     include_directories(${GST_INCLUDE_DIR}/../build)
+    include_directories(${GST_INCLUDE_DIR}/../libs)
 endif()   
 
 set(GSTLIB ${GST_DIR}/build/gst/libgstreamer-1.0.so)
+set(GSTBASELIB ${GST_DIR}/build/libs/gst/base/libgstbase-1.0.so)
 set(GOBJLIB gobject-2.0)
 
 ##glib

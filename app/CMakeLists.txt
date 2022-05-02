@@ -1,4 +1,4 @@
-AUX_SOURCE_DIRECTORY(./src  gst_app_source_files)
+AUX_SOURCE_DIRECTORY(.  gst_app_source_files)
 list(APPEND gst_app_sources ${gst_app_source_files})
 
 add_executable(gst-app ${gst_app_sources})
